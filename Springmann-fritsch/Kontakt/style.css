@@ -1,0 +1,350 @@
+/**
+ * Theme Name: BEATRIX SPRINGMANN-FRITSCH
+ * Theme URI: http://hauf-freunde.de
+ * Description: Das Theme für BEATRIX SPRINGMANN-FRITSCH
+ * Version: 1.0.0
+ * Author: HAUF+FREUNDE
+ * Author URI: http://www.hauf-freunde.de
+ * Tags: theme-options
+ */
+
+	
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500');
+@font-face { font-family: 'bsftelefon';
+             src: url('/fonts/bsftelefon.eot#')  format('eot'),
+                  url('/fonts/bsftelefon.woff')  format('woff'),
+                  url('/fonts/bsftelefon.ttf')   format('truetype'),
+                  url('/fonts/bsftelefon.svg#svgFontName')  format('svg'); }
+body, html{
+	background: url(Springmann_Webseite_Hintergrund_Verlauf.jpg);
+		background-size: contain;
+		background-position: top center;
+		background-repeat:repeat-y;
+		background-color:#a8cff0;
+		font-size:62.5%;
+		}
+
+* {
+	font-family: Quicksand;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	clear: both;
+	}
+
+html, body {
+    height: 100%;
+	min-height: 100%;
+	max-width: 100%;
+	}
+
+
+/*------------------------HEADER------------------------*/
+
+	.head-content{
+		text-decoration: none;
+		text-align: center;
+		width: 100%;
+		position: relative;
+		top: 0;
+		z-index: 0;
+		}
+
+	.head-wrapper{
+		width: 50%;
+		max-width: 90%;
+		min-width: 480px;
+		height: 100%;
+		margin: 0 auto;
+		padding: 0 5px 0 5px;
+		}
+
+	.head-content h1{
+		color: #1875b0;
+		font-size:3.26rem;
+		font-weight: 300;
+		margin-top: 1.5rem;
+		display: block;
+		}
+
+	.head-content h2{
+		color:white;
+		margin-bottom: 2rem;
+		font-size:2.1rem;
+		font-weight: 300;
+		}
+
+	.navigation{
+		border-top: solid 1px #1875b0;		
+		display: inline-block;
+		min-width: 490px;
+		}
+/*------------------Ausblenden des Navigationsbuttons------------------*/
+	header #menu {
+  		display: none;
+		} 
+
+	nav ul {
+		width: 100%;
+		
+   	 	margin: 10px 0 0 0;
+   	 	padding: 0;
+		}
+
+	nav li {
+		list-style-type: none;
+		display: inline-block;
+		}
+
+	nav li:first-child a {
+        padding-left: 0;
+   		}
+
+    nav li:last-child a {
+        padding-right: 0;
+   	 	}
+
+	nav a{
+		font-size:2.1rem;
+		font-weight: 300;
+		margin: 0 auto;
+		text-decoration: none;
+		padding: 20px 35px 0px 35px;
+		color: white;
+		}
+/*------------------HEADER------------------*/
+/*------------------MEDIA------------------*/
+/*@media only screen and (max-width:380px){
+	body{
+		margin: 0 5px;
+	}
+} */
+@media only screen and (max-width:510px){
+	
+	.head-wrapper{
+		width: 50%;
+		max-width: 90%;
+		min-width: 310px;
+		height: 100%;
+		margin: 0 auto;
+		
+		}
+	.navigation{
+		min-width: 310px;
+		display: block;
+		}
+	header nav #menu {
+		display: block;
+		margin: 1rem auto 0 auto;
+		padding: 1.5rem 4% 1.5rem 4%;
+		width: 40%;
+		text-align: center;
+		font-size: 2rem;
+		font-weight: 500;
+		font-variant-caps:all-petite-caps;
+		color: #fff;
+		cursor: pointer;
+		transition: all 500ms;
+		border: 2px solid white;
+		clear:both;
+		}
+	header nav ul {
+		width: 100%;
+		margin: 0 auto;
+		padding: 0;
+		max-height: 0;
+		transition: all 500ms;
+		overflow: hidden;
+  		}
+	header nav:hover > ul{
+		max-height: 600px;
+		}
+	header nav ul li:hover{
+		background-color: #388EC5;
+		} 
+	header nav ul li{
+		display: block;
+		font-size: 1.5rem;
+		margin: 0 auto;
+		padding: 0.5rem 0;
+		width: 45%;
+		list-style: none;
+		position: relative;
+		transition: all 500ms;
+		border-bottom: 1px solid white;
+		background-color: #1875b0;
+		}
+	
+	nav ul li a{
+		text-align: center;
+		font-size: 1.8rem;
+		padding: 0;
+		}
+}
+
+@media only screen and (max-width:1320px){
+	nav a{
+		margin: 0 auto;
+		padding: 20px 15px 0px 15px;
+		}
+	}
+
+@media only screen and (max-width:1080px){
+	nav a{
+		margin: 0 auto;
+		padding: 20px 8px 0px 8px;
+		}	
+	}
+
+/*------CONTENT------*/
+
+	.main-content{
+		
+		text-decoration: none;
+		z-index: 0;
+		height: auto;
+		width: 100%;
+		/*CONTENT ABSTAND ZUM HEADER*/
+		padding-top: 120px;
+		padding-bottom: 90px;
+		}
+
+	.main-wrapper {
+		max-width: 90%;
+		width: 30%;
+		min-width: 300px;
+		margin: 0 auto;
+		padding: 0 5px 0 5px;
+		}
+
+	.main-content h3{
+		font-size:8.9rem;
+		font-weight: 300;
+		text-align: center;
+		color: white;
+		margin: 0 auto;
+		}
+		
+	.main-content h4{
+		font-size:1.9rem;
+		font-weight: 400;
+		color: white;
+		padding-bottom: 0.4;
+		}
+
+	.main-content h5{
+			font-size:1.9rem;
+			font-weight: 500;
+			color: #1875b0;
+			padding-bottom: 0.4;
+			}
+
+	.main-content p{
+		font-size: 1.8rem;
+		font-weight: 400;
+		color: #1875b0;
+		line-height: 2.5rem;
+		}
+.main-content ul{
+		padding: 20px 0 20px 20px;
+}
+.main-content ul li{
+		font-size: 1.8rem;
+		font-weight: 400;
+		color: #1875b0;
+		line-height: 2.5rem;
+		}
+
+	.maps{
+		margin: 10px auto;
+		width: 100%;
+		max-width:100%;
+		min-width: 300px;
+}
+	 iframe{
+		width: 100%;
+		}
+
+	i{
+		font-family: 'bsftelefon';
+		font-weight: normal;
+    	font-style: normal;
+		}
+	img{
+		width: 100%;
+		min-width: 300px;
+	}
+
+/*------CONTENT------*/
+/*------MEDIA------*/
+@media only screen and (max-width:980px){
+	.main-content{
+		padding-top: 120px;
+		}
+	}
+
+@media only screen and (max-width:610px){
+	
+	.main-content h3{
+		font-size:4rem;
+		}
+	.main-content{
+		padding-top: 50px;
+		}
+	}
+
+/*------FOOTER------*/
+
+	.footer-content{
+		width: 100%;
+		z-index: 0;
+		height: auto;
+		position: fixed;
+		bottom: 0;
+		text-align: center;	
+		background-color: #8ac2f1;
+		box-shadow: 0px -9px 21px -3px #6ea7d7;
+		}
+
+	.footer-wrapper{
+		width: 50%;
+		min-width: 340px;
+		margin: 0 auto;
+		clear: both;
+		}
+
+	.footer-content p{
+		display: inline-block;
+		color: #1875b0;
+		font-weight: 400;
+		font-size: 1.8rem;
+		padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+		}
+	.footer-content p:first-child {
+        padding-bottom:0rem;
+		}
+	.footer-content p:last-child {
+        padding-top:0rem;
+		}
+
+	.footer-content b{
+		font-weight: 500;
+		}
+
+/*------FOOTER------*/
+/*------MEDIA------*/
+@media only screen and (max-width:500px){
+	.footer-content p{
+		font-size: 1.6rem;
+		}
+	}
+@media only screen and (max-width:500px){
+.footer-wrapper{
+		width: 50%;
+		min-width: 300px;
+		margin: 0 auto;
+		clear: both;
+		}
+	}
+
+	
