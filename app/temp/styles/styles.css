@@ -1,21 +1,13 @@
+
 body {
-    color: #2f5572;
-    padding: 10px;  
-    -webkit-columns: 300px 2;  
-            columns: 300px 2;
-    
+	font-family: 'Quicksand', sans-serif;
+	color: #1875b0;
 }
 
-.box a{
-      display: block;
-      padding: 10px;
-
-  }
-
-
-
-
-
+img {
+	max-width: 100%;
+	height: auto;
+}
 
 
 
